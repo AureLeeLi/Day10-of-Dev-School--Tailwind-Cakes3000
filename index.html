@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/477e17b079.js" crossorigin="anonymous"></script>
+    <script>tailwind.config={
+        theme : {
+            extend: {
+                colors: {
+                    defaut: "#333",
+                    bgNav: '#212d39',
+                    bgBorderH1: '#3e2c0a',
+                    txtHero: '#3e2c0a',
+                    colorPrimary: '#fbfbfb'
+                },
+                backgroundImage: {
+                    'heroBg': "url('/img/pexels-photo-132694.jpeg')",
+                    'chiffresBg': "url('/img/kitchen-cake-backe-backing.jpg')",
+                    'menuBg': "url('/img/pexels-photo-24553.jpg')",
+                },
+                fontFamily:{
+                    'body' : ['Kreon', 'serif'],
+                }
+            }
+        }
+    }</script>
+    <title>Cake 3000</title>
+</head>
+<body class="font-body">
+    <header class="bg-bgNav opacity-50 px-4 w-screen h-24 font-bold flex justify-between fixed top:0 lg:flex lg:justify-evenly items-center">
+        <h2 class="text-white text-4xl lg:text-5xl sticky">Cakes 3000</h1>
+            <div><span id="menuBurger"class="lg:hidden spanMenuBurger"><ul class="text-slate-300 text-sm sticky top-0 md:inline-flex md:text-lg">
+                <li class="md:mx-3"><a href="#QSN">Qui sommes-nous?</a></li>
+                <li class="md:mx-3"><a href="#chiffres">Quelques chiffres</a></li>
+                <li class="md:mx-3"><a href="#carte">Notre carte</a></li>
+                <li class="md:mx-3"><a href="#menus">Nos menus</a></li>
+                <li class="md:mx-3"><a href="#resa">Réservation</a></li>
+                <li><a href="#index.html"><i class="fa-solid fa-xmark" style="color: white;"></i></a></li>
+            </ul>
+            </span></div>
+            <div class="lg:hidden"><i class="fa-solid fa-bars text-2xl" style="color: #ffffff;"><a onclick=() href="#menuBurger"></a></i></div>
+            <nav class="hidden sticky top-0 lg:block">
+            <ul class="text-slate-300 text-sm sticky top-0 md:inline-flex md:text-lg">
+                <li class="md:mx-3"><a href="#QSN">Qui sommes-nous?</a></li>
+                <li class="md:mx-3"><a href="#chiffres">Quelques chiffres</a></li>
+                <li class="md:mx-3"><a href="#carte">Notre carte</a></li>
+                <li class="md:mx-3"><a href="#menus">Nos menus</a></li>
+                <li class="md:mx-3"><a href="#resa">Réservation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="w-full mx-auto">
+        <section class="hero bg-heroBg bg-fixed md:bg-top lg:bg-bottom h-content w-screen flex flex-col justify-evenly py-24">
+            <div class="textHero w-full mx-auto flex flex-col items-center">
+                <h1 class="bg-bgBorderH1 text-white text-7xl font-extrabold my-2 text-left">CAKES 3000</h1>
+                <h3 class="bg-white text-defaut text-3xl font-bold">Les meilleurs gâteaux près de chez vous</h3>
+            </div>
+            <div class="w-full mx-auto flex flex-col items-center pt-56">
+                <a class="arrowHero" href="index.html#QSN"><i class="fa-solid fa-arrow-down text-3xl font-bold" style="color: white;"></i></a>
+            </div>
+        </section>
+        <section id="QSN" class="bg-colorPrimary text-defaut font-bold text-center py-20 w-screen">
+            <div>
+                <h4 class="text-4xl uppercase font-bold">Qui Sommes-nous?</h4>
+                <h5 class="text-2xl uppercase">notre mot d'ordre des produits de qualité pour des gâteaux réussis</h5>
+                <hr class="w-32 h-1 m-auto bg-bgBorderH1 border-0 mt-8 md:w-24">
+            </div>
+            <div class="md:flex md:flex-row items-center">
+                <div class="mt-24 mx-12 md:mt-12">
+                    <i class="fa-solid fa-location-dot text-6xl" style="color: #333;"></i>
+                    <h6 class="text-xl mt-6">Produits Locaux</h6>
+                    <p class="text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem eveniet molestiae vero sit culpa possimus vitae quisquam dicta reiciendis totam.</p>
+                </div>
+                <div class="mt-12 mx-12">
+                    <i class="fa-regular fa-lemon text-6xl" style="color: #333;"></i>
+                    <h6 class="text-xl mt-6">Tradition</h6>
+                    <p class="text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem eveniet molestiae vero sit culpa possimus vitae quisquam dicta reiciendis totam.</p>
+                </div>
+                <div class="mt-12 mx-12">
+                    <i class="fa-solid fa-square-check text-6xl" style="color: #333;"></i>
+                    <h6 class="text-xl mt-6">Qualité</h6>
+                    <p class="text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem eveniet molestiae vero sit culpa possimus vitae quisquam dicta reiciendis totam.</p>
+                </div>
+            </div>
+        </section>
+        <section class="chiffres h-content bg-chiffresBg bg-center bg-fixed flex justify-center py-20" id="chiffres">
+            <div class="textChiffres md:flex md:flex-row md:my-8 md:justify-around">
+                <div class="text-center mt-8 drop-shadow-[2px_2px_2px_black] lg:mx-16">
+                    <i class="fa-solid fa-mug-saucer text-7xl" style="color: white"></i>
+                    <h5 class="text-4xl text-white font-bold">1518</h5>
+                    <p class="text-xl text-white uppercase mt-4 lg:text-lg">boissons chaudes servies</p>
+                </div>
+                <div class="text-center mt-8 drop-shadow-[2px_2px_2px_black] lg:mx-16">
+                    <i class="fa-solid fa-heart text-7xl" style="color: white;"></i>
+                    <h5 class="text-4xl text-white font-bold">906</h5>
+                    <p class="text-xl text-white uppercase mt-4 lg:text-lg">gâteaux réalisés avev amour</p>
+                </div>
+                <div class="text-center mt-8 drop-shadow-[2px_2px_2px_black] lg:mx-16">
+                    <i class="fa-solid fa-utensils text-7xl" style="color: white;"></i>
+                    <h5 class="text-4xl text-white font-bold">2764</h5>
+                    <p class="text-xl text-white uppercase mt-4 lg:text-lg">parts de gâteaux</p>
+                </div>
+                <div class="text-center mt-8 drop-shadow-[2px_2px_2px_black] lg:mx-16">
+                    <i class="fa-solid fa-user-group text-7xl" style="color: white;"></i>
+                    <h5 class="text-4xl text-white font-bold">723</h5>
+                    <p class="text-xl text-white uppercase mt-4 lg:text-lg">nouvelles rencontres</p>
+                </div>
+            </div>
+        </section>
+        <section id="carte" class="bg-colorPrimary text-defaut font-bold text-center py-20">
+            <div class="mt-12">
+                <h4 class="text-4xl uppercase font-bold">NOTRE CARTE</h4>
+                <h5 class="text-2xl uppercase mt-4">faites votre choix !</h5>
+                <hr class="w-32 h-1 m-auto bg-bgBorderH1 border-0 mt-8 md:w-24">
+            </div>
+            <div class="md:flex md:justify-center md:flex-wrap">
+                <div class="mt-20 md:w-1/2 lg:basis-1/3">
+                    <img class="mx-auto border-gray-300 rounded-lg border-4 border-solid" src="./img/carte/hot-drinks.png" alt="">
+                    <h6 class="text-xl mt-6">Boissons Chaudes</h6>
+                    <p class="text-1xl mt-6">Expresso</p>
+                    <p class="text-1xl">Café Long</p>
+                    <p class="text-1xl">Lait russe</p>
+                    <p class="text-1xl">Chocolat Chaud</p>
+                    <p class="text-1xl">Thé à la menthe</p>
+                    <p class="text-1xl">Thé 5 fruits rouges</p>
+                </div>
+                <div class="mt-20 md:w-1/2 lg:basis-1/3">
+                    <img class="mx-auto border-gray-300 rounded-lg border-4 border-solid" src="./img/carte/ice-drinks.png" alt="">
+                    <h6 class="text-xl mt-6">Boissons Fraîches</h6>
+                    <p class="text-1xl mt-6">Café glacé</p>
+                    <p class="text-1xl">Ice Tea</p>
+                    <p class="text-1xl">Coca Cola</p>
+                    <p class="text-1xl">Fanta</p>
+                    <p class="text-1xl">Diabolo</p>
+                </div>
+                <div class="mt-20 md:w-1/2 lg:basis-1/3">
+                    <img class="mx-auto border-gray-300 rounded-lg border-4 border-solid" src="./img/carte/cakes.png" alt="">
+                    <h6 class="text-xl mt-6">Gâteaux</h6>
+                    <p class="text-1xl mt-6">Cheesecake Oreo</p>
+                    <p class="text-1xl">Cheesecake Citron</p>
+                    <p class="text-1xl">Muffins</p>
+                    <p class="text-1xl">Cookies</p>
+                    <p class="text-1xl">Fondant au chocolat</p>
+                    <p class="text-1xl">Tarte citron meringué</p>
+                </div>
+            </div>
+        </section>
+        <section id="menus" class="bg-menuBg bg-fixed h-content bg-center flex flex-col text-white font-bold mx-auto py-20 md:px-12 lg:justify-center lg:pb-24">
+            <div>
+                <h4 class="text-5xl uppercase text-center">MENUS</h4>
+                <h5 class="text-xl uppercase mt-4 text-center">pas la peine de se priver...</h5>
+                <hr class="w-32 h-1 m-auto bg-bgBorderH1 border-0 mt-8 md:w-24">
+            </div>
+            <div class="menus flex flex-col w-screen mx-auto items-center md:flex-row md:w-11/12">
+                <div class="menu flex items-center justify-center mx-auto w-11/12 md:w-1/2 md:mx-6 mt-10">
+                    <div class="itemMenu relative w-1/2 md:w-1/2">
+                        <img class="w-full border-white rounded-md border-4 border-solid" src="./img/menu/cheesecake-speculoos.jpg" alt="">
+                        <span class="text-xl bg-orange-900 border-white rounded-full border-4 border-solid py-4 px-2 absolute -top-6 -left-6">6€90</span>
+                    </div>
+                    <div class="itemMenuText w-1/2 md:w-1/2">
+                        <h6 class="text-xl lg:text-3xl">Menu Cheesecake</h6>
+                        <p class="text-sm mt-1.5 lg:mt-12 lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae optio doloremque fuga quo quibusdam modi. Molestias omnis, debitis, porro officiis.</p>
+                        <button class="bg-red-600 rounded-md p-2 mt-1.5 lg:mt-6">Plus d'infos</button>
+                    </div>
+                </div>
+                <div class="menu flex items-center justify-center mx-auto w-11/12 md:w-1/2 md:mx-6 mt-10">
+                    <div class="itemMenu relative w-1/2 md:w-1/2">
+                        <img class="w-full border-white rounded-md border-4 border-solid" src="./img/menu/muffin-myrtille.jpg" alt="">
+                        <span class="text-xl bg-cyan-300 border-white rounded-full border-4 border-solid py-4 px-2 absolute -top-6 -left-6">5€90</span>
+                    </div>
+                    <div class="itemMenuText w-1/2 md:w-1/2">
+                        <h6 class="text-xl lg:text-3xl">Menu Muffins</h6>
+                        <p class="text-sm mt-1.5 lg:mt-12 lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae optio doloremque fuga quo quibusdam modi. Molestias omnis, debitis, porro officiis.</p>
+                        <button class="bg-red-600 rounded-md p-2 mt-1.5 lg:mt-6">Plus d'infos</button>
+                    </div>
+                </div>  
+            </div>
+            <div class="menus flex flex-col w-screen mx-auto md:flex-row items-center md:w-11/12">
+                <div class="menu flex items-center justify-center mx-auto w-11/12 md:w-1/2 md:mx-6 mt-10">
+                    <div class="itemMenu relative w-1/2 md:w-1/2">
+                        <img class="w-full border-white rounded-md border-4 border-solid" src="./img/menu/cookies-chocolat.jpg" alt="">
+                        <span class="text-xl bg-green-500 border-white rounded-full border-4 border-solid py-4 px-2 absolute -top-6 -left-6">4€90</span>
+                    </div>
+                    <div class="itemMenuText w-1/2 md:w-1/2">
+                        <h6 class="text-xl lg:text-3xl">Menu Cookies</h6>
+                        <p class="text-sm mt-1.5 lg:mt-12 lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae optio doloremque fuga quo quibusdam modi. Molestias omnis, debitis, porro officiis.</p>
+                        <button class="bg-red-600 rounded-md p-2 mt-1.5 lg:mt-6">Plus d'infos</button>
+                    </div>
+                </div>
+                <div class="menu flex items-center justify-center mx-auto w-11/12 md:w-1/2 md:mx-6 mt-10">
+                    <div class="itemMenu relative w-1/2 md:w-1/2">
+                        <img class="w-full border-white rounded-md border-4 border-solid" src="./img/menu/big-menu.jpg" alt="">
+                        <span class="text-xl bg-orange-900 border-white rounded-full border-4 border-solid py-4 px-2 absolute -top-6 -left-6">9€90</span>
+                    </div>
+                    <div class="itemMenuText w-1/2 md:w-1/2">
+                        <h6 class="text-xl lg:text-3xl">Le Big Menu</h6>
+                        <p class="text-sm mt-1.5 lg:mt-12 lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae optio doloremque fuga quo quibusdam modi. Molestias omnis, debitis, porro officiis.</p>
+                        <button class="bg-red-600 rounded-md p-2 mt-1.5 lg:mt-6">Plus d'infos</button>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <section id="resa" class="resaHoraires h-content bg-colorPrimary bg-colorPrimary text-defaut py-20">
+            <div class="mx-8">
+                <h4 class="text-5xl uppercase font-bold text-center md:text-3xl">réservation</h4>
+                <h5 class="text-xl uppercase mt-4 ml-2 font-bold text-center md:text-lg">il n'y aura pas de place pour tout le monde alors réservez votre place</h5>
+                <hr class="w-32 h-1 m-auto bg-bgBorderH1 border-0 mt-8 md:w-24">
+            </div>
+            <div class="md:flex md:justify-center lg:justify-evenly">
+            <section class="resa font-bold mt-14 bg-colorPrimary md:basis-2/5 md:mt-6">
+                <h6 class="text-lg m-2 md:text-sm md:text-center">Remplissez le formulaire pour votre réservation (tous les champs sont obligatoires)</h6>
+                <form action="" method="post" class="flex flex-col">
+                    <div class="flex flex-col m-2 md:flex-row md:m-2 md:justify-around">
+                        <label for="inputFirstName"><input type="text" name="FirstName" id="inpupFirstName" required placeholder="Prénom" class="bg-colorPrimary border-2 p-2 w-full "autofocus></label>
+                        <label for="inputLastName"><input type="text" name="LasName" id="inpupFirstName" required placeholder="Nom" class="bg-colorPrimary border-2 rounded p-2 mt-4 w-full md:mt-0"autofocus></label>
+                    </div>
+                    <div class="flex flex-col m-2 md:flex-row md:m-2 md:justify-around">
+                        <label for="inputEmail"><input type="email" name="Email" id="inputEmailName" required placeholder="Email" class="bg-colorPrimary border-2 rounded p-2 w-full md:mt-0" autofocus></label>
+                        <label for="inputPhone"><input type="number" name="Phone" id="inputPhone" required placeholder="Téléphone" class="bg-colorPrimary border-2 rounded p-2 mt-4 w-full md:mt-0" autofocus></label>
+                    </div>
+                    <div class="flex flex-col m-2 md:flex-row md:m-2 md:justify-around">
+                        <label for="inputDayBooking"><input type="text" name="DayBooking" id="inputDayBooking" required placeholder="Jour de réservation" class="bg-colorPrimary border-2 p-2 w-full md:mt-0" autofocus></label>
+                        <label for="inputNbResa"><input type="number" name="NbResa" id="inputNbResa" required placeholder="Nombre de personnes" class="bg-colorPrimary border-2 p-2 mt-4 w-full md:mt-0"autofocus></label>
+                    </div>
+                    <div class="bg-colorPrimary">
+                        <p class="text-xl m-2 md:text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium impedit libero at obcaecati, porro reprehenderit enim, odit magni tenetur aut ut molestias incidunt, dignissimos illo. Itaque debitis architecto possimus unde.</p>
+                    </div>
+                    <div class="bg-colorPrimary">
+                        <input type="submit" value="Je réserve" class=" text-white bg-red-600 rounded-md p-2 m-1.5 md:text-sm">
+                    </div> 
+                </form>
+            </section> 
+            <section class="horaires font-bold bg-colorPrimary ml-2 md:basis-2/5 md:mt-8 md:ml-4">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-clock" style="color: #000000;"></i>
+                        <h5 class="text-xl pl-2 md:text-lg">Horaires</h5>
+                    </div>
+                    <div class="text-lg md:text-sm">
+                        <P >Petit dej'</P>
+                        <h6>Lun au Ven: 11h-11h30</h6>
+                    </div>
+                    <div class="text-lg md:text-sm">
+                        <P>Goûter</P>
+                        <h6>Lun au Ven: 15h30-16h</h6>
+                    </div>
+                    <div class="flex items-center pt-2 ml-1">
+                        <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                        <h5 class="text-xl pl-2 md:text-lg">Adresse</h5>
+                    </div>
+                    <div class="text-lg md:text-sm">
+                        <h6>Rue Denis Papin - 59650 Villeneuve d'Ascq</h6>
+                    </div>
+                    <div class="flex items-center pt-2 ml-1">
+                        <i class="fa-solid fa-clock" style="color: #000000;"></i>
+                        <h5 class="text-xl pl-2 md:text-lg">Contacts</h5>
+                    </div>
+                    <div class="text-lg md:text-sm">
+                        <h6>Email: <a href="" class="text-blue-500">cooking@cakes3000.fr</a></h6>
+                    </div>
+                    <div class="text-lg pt-2 md:text-sm">
+                        <h6>Tél: 0123456789</h6>
+                    </div>
+            </section>
+        </div>
+        </section>
+        <div class="footer h-content bg-bgBorderH1 text-white md:flex md:justify-between">
+            <div class="flex text-2xl font-bold items-center m-6 pt-16 md:text-lg md:pt-8">
+                <i class="px-2 fa-regular fa-copyright" style="color: white;"></i>
+                <p>Copyright Cakes 3000</p>
+            </div>
+            <div class="flex text-2xl font-bold items-center m-6 md:text-lg md:pt-8">
+                <ul class="flex py-8">
+                    <li><i class=" p-2 fa-brands fa-instagram" style="color: white;"></i></li>
+                    <li><i class="p-2 fa-brands fa-square-youtube" style="color: white;"></i></li>
+                    <li><i class="p-2 fa-brands fa-square-facebook" style="color: white;"></i></li>
+                    <li><i class="p-2 fa-brands fa-square-pinterest" style="color: white;"></i></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

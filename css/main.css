@@ -1,0 +1,20 @@
+.spanMenuBurger ul{
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    padding: 1rem;
+    margin: auto;
+    background-color: #212d39;
+    color: white;
+}
+
+.spanMenuBurger li{
+    padding:0.5rem;
+    margin: auto;
+}
+
+.spanMenuBurger{
+    margin: auto;
+    position:absolute;
+    top: 5rem;
+    right:0;
+}
